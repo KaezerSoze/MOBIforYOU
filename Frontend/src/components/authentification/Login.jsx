@@ -19,7 +19,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
     }
     
     try {
-      const response = await axios.post('http://localhost:5020/auth/login', {
+      const response = await axios.post('http://localhost:5020/login', {
         email,
         password,
       });

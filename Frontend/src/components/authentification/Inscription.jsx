@@ -18,11 +18,11 @@ const RegistrationForm = () => {
       return;
     }
  
-    navigate("/auth/users")
+    navigate("/auth")
     
     
     try {
-      const response = await axios.post('http://localhost:5020/auth/users', {
+      const response = await axios.post('http://localhost:5020/login', {
         username,
         email,
         password,
@@ -77,7 +77,7 @@ const RegistrationForm = () => {
         </div>
         <button className= 'button'type="submit">S'inscrire</button>
         {message && <p>{message}</p>}
-        <button className= 'button' as={NavLink} to="/auth/users">Connexion</button>
+        <button className= 'button' as={NavLink} to="/auth">Connexion</button>
       </form>
     </div>
     </div>

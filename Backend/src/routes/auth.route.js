@@ -56,7 +56,7 @@ router.post('/', async (req, res) => {
 });
 
 // Route pour la connexion de l'utilisateur
-router.post('/auth/users', async (req, res) => {
+router.post('/login', async (req, res) => {
   const { email, password } = req.body;
   console.log(email, password)
 
