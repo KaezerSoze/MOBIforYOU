@@ -19,10 +19,11 @@ const LoginForm = ({ setIsLoggedIn }) => {
     }
     
     try {
-      const response = await axios.post('http://localhost:5020/login', {
+      const response = await axios.post('http://localhost:5020/', {
         email,
         password,
       });
+      console.log(email,"je suis co");
 
       const { token } = response.data;
       localStorage.setItem('token', token);
@@ -33,7 +34,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
       setIsLoggedIn(true);
 
       
-      navigate("/"); 
+      navigate("/home"); 
       
     } catch (error) {
       if (error.response && error.response.data) {

@@ -18,7 +18,7 @@ const RegistrationForm = () => {
       return;
     }
  
-    navigate("/auth")
+    navigate("/login")
     
     
     try {
