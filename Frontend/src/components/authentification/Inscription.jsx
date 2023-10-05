@@ -22,7 +22,7 @@ const RegistrationForm = () => {
     
     
     try {
-      const response = await axios.post('http://localhost:5020/login', {
+      const response = await axios.post('http://localhost:5020/', {
         username,
         email,
         password,
@@ -38,6 +38,7 @@ const RegistrationForm = () => {
       }
   
     }
+   
   };
 
   return (

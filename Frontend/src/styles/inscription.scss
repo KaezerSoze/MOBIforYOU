@@ -11,20 +11,8 @@
     padding: 20px;
     width: 300px;
     
-    .button {
-      width: 100%;
-      background-color: #00ff1eb4; /* Couleur de fond rouge */
-      color: #ffffff; /* Couleur du texte en blanc */
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      padding: 10px 10px;
-      transition: background-color 0.2s; /* Transition pour l'effet de hover */
+  
     
-      &:hover {
-        background-color: #3633ff; /* Couleur de fond rouge légèrement plus claire au survol */
-      }
-    }
   }
   
   .planet-form h3 {

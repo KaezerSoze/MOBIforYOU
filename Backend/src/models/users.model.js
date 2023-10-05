@@ -2,6 +2,7 @@
 
 import database from '../datasource.js';
 
+
 const User = {
   async createUser(username, email, password) {
     try {

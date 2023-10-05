@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function NavBar({ isLoggedIn, setIsLoggedIn }) {
   const navigate = useNavigate();
@@ -14,19 +14,19 @@ function NavBar({ isLoggedIn, setIsLoggedIn }) {
 
   return (
     <div className="navbar">
-      <ul>
-        <li>
-          <NavLink to="/home">
-            <h2>MOBI4YOU</h2>
-          </NavLink>
-        </li>
-      </ul>
-
-      {isLoggedIn && (
-        <button onClick={handleLogout}>Déconnexion</button>
-      )}
+      <div className="navbar-content">
+      <div className="logo-container">
+    <img src="/assets/globals/Black_And_White_Modern_Vintage_Retro_Brand_Logo.png" alt="Logo" className="logo-image" />
+        <h4>MOBI4YOU</h4>
+      
+        {isLoggedIn && (
+          <button className='logout-button' onClick={handleLogout}>Déconnexion</button>
+        )}
+      </div>
+      </div>
     </div>
   );
+  
 }
 
 export default NavBar;

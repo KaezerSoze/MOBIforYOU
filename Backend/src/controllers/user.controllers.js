@@ -4,6 +4,7 @@ import User from '../models/user.model.js';
 // Créer un nouvel user
 const createUser = async (req, res) => {
   try {
+    console.log(req.body);
     const { username, email, password } = req.body;
 
     // Vérifie si l'utilisateur existe déjà dans la base de données
@@ -15,7 +16,6 @@ const createUser = async (req, res) => {
     // Hasher le mot de passe 
     const hashedPassword = await argon2.hash(password);
     
-
     // Créer le nouvel utilisateur dans la BDD
     const newUser = await User.create({
       username,

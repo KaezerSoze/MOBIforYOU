@@ -1,0 +1,57 @@
+.navbar {
+    background: linear-gradient(180deg, #144d02, #edf4bd);
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    border-radius: 22px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-content {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: center; /* Centre verticalement */
+  }
+  
+  
+
+
+      
+      .logout-button {
+        background-color: #144d0268; // Couleur de fond du bouton
+        color: white; // Couleur du texte du bouton
+        border: none; // Supprime la bordure du bouton
+        padding: 1px 2px; // Ajoute de l'espace autour du texte du bouton
+        border-radius: 5px; // Ajoute des coins arrondis au bouton
+        cursor: pointer; // Change le curseur en main au survol du bouton
+        font-size: 2vh; // Taille du texte du bouton
+        margin-right: 10px; // Marge à droite pour l'espacement par rapport au titre
+      }
+   
+
+    h4 {
+        font-size: 1.5rem;
+        color: #4f7706;
+        background-color: #ffffffb5;
+        
+        letter-spacing: 8px;
+        border-radius: 8px;
+        letter-spacing: 10%;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.478);
+        transition: background-color 0.3s ease-in-out;
+      
+        &:hover {
+          background-color: #E0E0E0;
+        }
+      
+        &:focus {
+          outline: none;
+          background-color: #F8BF7D; /* Couleur de mise en évidence pour l'accessibilité */
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+      }

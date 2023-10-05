@@ -1,0 +1,85 @@
+/* Style pour centrer le menu déroulant */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour le menu déroulant */
+select {
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Ajoute un espacement entre le menu et les groupes de cases à cocher */
+}
+
+/* Le reste du style reste inchangé */
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkbox-container > div {
+  width: calc(25% - 20px); /* Ajustez la largeur pour afficher 4 éléments par ligne */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #ffffff53;
+  box-sizing: border-box; /* Ajustez la boîte pour inclure les marges et les bordures dans la largeur */
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between; /* Pour aligner les formulaires côte à côte */
+  width: 100%; /* Pour occuper la largeur totale de l'espace disponible */
+  max-width: 800px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: 0 auto; /* Pour centrer le conteneur horizontalement */
+}
+
+/* Styles pour les formulaires (identiques à ceux que vous avez fournis) */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f084;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  /* Le reste du style pour les formulaires reste inchangé */
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #cccccc7a;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff26;
+  color: #ffffff7b;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

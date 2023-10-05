@@ -1,0 +1,19 @@
+body {
+    background-image: url('../assets/inclusion-5249903_640.png');
+    background-position: center;
+    margin-bottom: 15px;
+    background-size: 100%; /* Réduit la taille de l'image à 50% de la taille de l'écran */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y:bottom ;
+    width: 100%;
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      background-size: 80%; /* Réduit davantage la taille de l'image pour les petits écrans */
+      /* Autres styles pour les petits écrans... */
+    }
+  }
+  

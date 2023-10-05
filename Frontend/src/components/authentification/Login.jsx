@@ -19,7 +19,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
     }
     
     try {
-      const response = await axios.post('http://localhost:5020/', {
+      const response = await axios.post('http://localhost:5020/login', {
         email,
         password,
       });
@@ -48,7 +48,6 @@ const LoginForm = ({ setIsLoggedIn }) => {
   return (
     <div className='centered-container'>
     <div className='login-form'>
-      <h3>Connexion</h3>
       <form onSubmit={handleLogin}>
         <div className='form-group'>
           <label>Email:</label>
